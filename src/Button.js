@@ -8,7 +8,7 @@ function Button(props) {
     props.setClickCount(newCount);
     console.log("this button was clicked");
   };
-  return <button onClick={handleClick}>Click Me!</button>;
+  return <button onClick={handleClick}>{props.label}</button>;
 }
 
 export default Button;
